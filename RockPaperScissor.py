@@ -7,7 +7,6 @@ losses = 0
 
 
 #The main game loop
-
 while True:
     #This line keeps track of the status of game
     print('%s Wins, %s losses, %s ties'%(wins, losses, ties))
@@ -26,7 +25,9 @@ while True:
             break
         else:
             print('Enter either r / p / s / q')
-        
+
+
+#User inputs are takes from this block of code      
     if usermove == 'r':
         print('ROCK versus...')
     elif usermove == 'p':
@@ -34,6 +35,7 @@ while True:
     elif usermove == 's':
         print('SCISSOR versus...')
 
+#Random funtion generates a random number which is assigned either rock / paper / scissor
     randomNumber = random.randint(1,3)
     if randomNumber == 1:
         AiMove = 'r'
@@ -45,6 +47,8 @@ while True:
         AiMove = 's'
         print('SCISSOR')
 
+
+#Logic go the game is written here....
     if usermove == AiMove:
         print('The game is tie!')
         ties = ties + 1

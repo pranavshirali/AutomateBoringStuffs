@@ -1,3 +1,5 @@
+#Author: Pranav Shirali
+
 import random, sys
 
 print('ROCK, PAPER, SCISSORS')

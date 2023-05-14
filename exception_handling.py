@@ -1,3 +1,5 @@
+#Author: Pranav Shirali
+
 def Zero_division(dividedby):
     try:
         return 40 / dividedby

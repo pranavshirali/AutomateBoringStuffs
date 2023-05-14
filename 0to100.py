@@ -1,3 +1,5 @@
+#Author: Pranav Shirali
+
 import random
 
 print('Sum of first 100 numbers:')

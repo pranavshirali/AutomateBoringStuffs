@@ -1,3 +1,5 @@
+#Author: Pranav Shirali
+
 import random
 
 def generatAnswer(getAnswer):

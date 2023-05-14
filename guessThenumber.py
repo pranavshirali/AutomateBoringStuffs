@@ -1,3 +1,5 @@
+#Author: Pranav Shirali
+
 import random
 
 secertNumber = random.randint(1 , 10)

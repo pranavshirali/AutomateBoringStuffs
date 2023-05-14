@@ -1,7 +1,7 @@
 import random
 
-secertNumber = random.randint(1 , 5)
-print('I am thinking of a number between 1 and 20, you have 6 chances')
+secertNumber = random.randint(1 , 10)
+print('I am thinking of a number between 1 and 10, you have 6 chances')
 
 for takeGuess in range(0 , 5):
     print('Take a guess')

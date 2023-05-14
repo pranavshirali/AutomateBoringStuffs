@@ -16,7 +16,7 @@ while True:
         if usermove == 'q':
             if wins > losses:
                 print('Hurray!!You won the game...')
-            elif ties > wins or ties > losses or wins == ties or ties == losses:
+            elif ties > wins or ties > losses or losses == wins:
                 print('Ohh!!Game is tie...')
             elif losses > wins:
                 print('You lose the game, better luck next time..')

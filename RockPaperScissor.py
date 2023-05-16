@@ -6,7 +6,11 @@ print('ROCK, PAPER, SCISSORS')
 wins = 0
 ties = 0
 losses = 0
-
+#Asks for user name before game begins...
+print('Hello there!! What is your name?')
+user_name = input()
+print(f'All the best for the game {user_name}...')
+print()
 
 #The main game loop
 while True:
@@ -17,11 +21,11 @@ while True:
         usermove = input()
         if usermove == 'q':
             if wins > losses:
-                print('Hurray!!You won the game...')
+                print(f'Hurray!!{user_name} won the game...')
+            elif losses > wins and losses > ties:
+                print(f'Ohh {user_name}, you have lost the game :(  try again...')
             elif ties > wins or ties > losses or losses == wins:
-                print('Ohh!!Game is tie...')
-            elif losses > wins:
-                print('You lose the game, better luck next time..')
+                print(f'Wow {user_name} you have made this game a tie...')
             sys.exit()
         elif usermove =='r' or usermove == 'p' or usermove == 's':
             break

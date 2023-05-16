@@ -7,9 +7,7 @@
     #-->If the previous term is odd, the next number in sequence would be 3 * coltz_number + 1. 
 #The conjecture is that these sequences always reach 1, no matter which positive integer is chosen to start the sequence.
 
-
-print("Enter a number for it's collatz series")
-user_input = int(input())
+import sys
 
 def coltz_series(coltz_number):
     while coltz_number != 1:
@@ -21,5 +19,13 @@ def coltz_series(coltz_number):
             result = 3 * coltz_number + 1
             print(result)
             return coltz_series(result)
-        
+
+print("Enter a number for it's collatz series")
+#while True:
+try:
+    user_input = int(input())
+except ValueError:
+    print('ERROR: Enter valid integer.')
+    sys.exit()
+
 coltz_series(user_input)

@@ -1,4 +1,5 @@
 # Conway's Game of Life
+#Author: Writer of the book AutomateTheBoringStuffs (***NOT ME***)
 import random, time, copy,sys
 WIDTH = 60
 HEIGHT = 20

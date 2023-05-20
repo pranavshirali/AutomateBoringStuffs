@@ -16,6 +16,7 @@ def printboard():
     print(theBoard['botleft'] + '|' + theBoard['botmid'] + '|' + theBoard['botright'])
     print()
 
+
 def check_win(player, board):
     # Check rows
     if board['topleft'] == board['topmid'] == board['topright'] == player:

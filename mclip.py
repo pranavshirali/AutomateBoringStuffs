@@ -1,3 +1,4 @@
+#Author: Pranav 
 #! python3
 #mclip.py - A multi-clipboard program.
 
@@ -29,16 +30,14 @@ text = {'agree': """Yes, I agree. That sounds fine to me.""",
 
 
 if len(sys.argv) < 2:
-    print('Error: Enter the keyphrase..')
+    print('Error: Empty argument passed. Please enter the argument.')
     sys.exit()
 
 keyphrase = sys.argv[1]
 
 if keyphrase in text:
     pyperclip.copy(text[keyphrase])
-    print(f'Text for {keyphrase} has been copied to clipboard.')
+    print(f'Snippet corresponding to {keyphrase} is copied to clipboard.')
 
 else:
-    print(f'Keyphrase -{keyphrase} is not available.')
-
-    
+    print('Argument sent is not there is dictionary.')

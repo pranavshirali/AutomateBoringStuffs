@@ -34,7 +34,7 @@ while True:
 
 
 #User inputs are takes from this block of code      
-    if usermove == 'r':
+    if usermove == 'r' or 'R':
         print('ROCK versus...')
     elif usermove == 'p':
         print('PAPER versus...')

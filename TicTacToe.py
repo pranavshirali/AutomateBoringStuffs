@@ -18,6 +18,7 @@ def printboard():
 
 
 def check_win(player, board):
+    
     # Check rows
     if board['topleft'] == board['topmid'] == board['topright'] == player:
         return True
@@ -25,6 +26,7 @@ def check_win(player, board):
         return True
     elif board['botleft'] == board['botmid'] == board['botright'] == player:
         return True
+    
     # Check columns
     elif board['topleft'] == board['midleft'] == board['botleft'] == player:
         return True
@@ -32,6 +34,7 @@ def check_win(player, board):
         return True
     elif board['topright'] == board['midright'] == board['botright'] == player:
         return True
+    
     # Check diagonals
     elif board['topleft'] == board['center'] == board['botright'] == player:
         return True
